@@ -1,20 +1,11 @@
 // jQuery实现左右div自适应相同高度
 $(function () {
-    var leftOuterHeight = $("#left").outerHeight();
-    var rightOuterHeight = $("#right").outerHeight();
-    // alert(leftOuterHeight + "    " + rightOuterHeight);
-
-    var leftHeight = $("#left").height();
-    var rightHeight = $("#right").height();
-    // alert(leftHeight + "    " + rightHeight);
-
-    var leftTop = $("#left").offset().top;
-   $(window).scroll(function () {
-       if(leftTop < $(this).scrollTop){
-           alert("sadasdasdsad");
-           $("#left").css("top", $(this).scrollTop - leftTop);
+    $(window).scroll(function () {
+       var windowTop = $(this).scrollTop();
+       if(windowTop < 100){
+           $("#left").css({"position":"absolute",top:"100px"});
        }else {
-           alert(1231321321)
+           $("#left").css({"position":"absolute",top: windowTop + "px"});
        }
    });
 });
