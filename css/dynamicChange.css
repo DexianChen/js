@@ -1,0 +1,20 @@
+#left {
+    background: #999999;
+    float: left;
+    width: 100px;
+}
+
+#right {
+    background: #0066FF;
+    color: #fff;
+    width: 300px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+#h2-caption{
+    text-align: center;
+}
