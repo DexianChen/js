@@ -1,0 +1,6 @@
+#studentTable th,td{
+	border: 1px solid black;
+}
+#studentTable tbody tr:nth-child(odd) {
+	background-color:#F2F2F2;
+}

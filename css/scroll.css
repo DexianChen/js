@@ -1,0 +1,27 @@
+
+#nav{
+	position: fixed;
+	left:0;
+	top:10px;
+}
+#nav li{
+	width:50px;
+	height:30px;
+	font:bold 20px/30px simhei;
+	text-align: center;
+	list-style-type: none;
+	background:#333;
+	color:#fff;
+	margin:10px 0;
+	cursor: pointer;s
+}
+#list li{
+	width:50%;
+	height:300px;
+	text-align: center;
+	font:bold 100px/300px simhei;
+	list-style-type: none;
+	background:yellow;
+	color:blue;
+	margin:50px 200px;
+}

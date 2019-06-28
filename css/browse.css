@@ -1,0 +1,8 @@
+li {
+	width: 300px;
+	height: 20px;
+}
+
+li.color {
+	color: red;
+}
