@@ -1,0 +1,4 @@
+body{background: url(../img/404.jpg);background-size: cover;}
+.error{width: 100px;margin: 0 auto;}
+#count b{font-size: 65px;color:#BF3333;}
+.btn-warning{color: orange}

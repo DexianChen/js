@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*背景 start*/
+.bg {
+    width: 100%;
+    height: 300px;
+    background: #a534d6;
+    position: relative;
+}
+
+/*背景图片 start*/
+.b_img {
+    width: 760px;
+    height: 300px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+/*背景图片 end*/
+/*图片下方的按钮 start*/
+.bg .nav {
+    position: absolute;
+    bottom: 10px;
+    left: 46%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    border-radius: 25px;
+}
+
+.bg .nav ul {
+    display: inline-block;
+    padding: 5px 9px;
+}
+
+.bg .nav ul li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.bg .nav ul .select {
+    background: #fff;
+}
+
+.bg .btn {
+    width: 46px;
+    height: 70px;
+    background: url("../img/404.jpg");
+    position: absolute;
+    display: none;
+}
+
+.bg .show {
+    display: block;
+}
+
+.bg .b_pre {
+    top: 40%;
+    left: 300px;
+    background-position: 49px 0px;
+}
+
+.bg .b_next {
+    top: 40%;
+    left: 1014px;
+    background-position: 0px 309px;
+}
+
+/*图片下方的按钮 end*/
+/*背景 end*/

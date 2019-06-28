@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    background: #666;
+    color: #666;
+}
+
+.menu {
+    width: 155px;
+    background: #fff;
+    box-shadow: 1px 1px 30px #ccc;
+    display: none;
+    position: absolute;
+}
+
+.menu ul li {
+    list-style: none;
+    line-height: 35px;
+    padding-left: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu ul li:hover {
+    background: #647E7C;
+    color: #fff;
+}
