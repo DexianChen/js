@@ -1,14 +1,18 @@
 #left {
     background: #999999;
-    /*float: left;*/
     width: 100px;
+    position: absolute;
+    left: 50px;
+    top: 85px;
 }
 
 #right {
     background: #0066FF;
     color: #fff;
     width: 300px;
-    /*float: left;*/
+    position: absolute;
+    left: 150px;
+    top: 85px;
 }
 
 .clear {

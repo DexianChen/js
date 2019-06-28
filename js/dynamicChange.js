@@ -2,10 +2,10 @@
 $(function () {
     $(window).scroll(function () {
        var windowTop = $(this).scrollTop();
-       if(windowTop < 100){
-           $("#left").css({"position":"absolute",top:"100px"});
+       if(windowTop > 85){
+           $("#left").css({top:"85px"});
        }else {
-           $("#left").css({"position":"absolute",top: windowTop + "px"});
+           $("#left").css({top: windowTop + "px"});
        }
    });
 });
