@@ -2,7 +2,7 @@
 $(function () {
     $(window).scroll(function () {
        var windowTop = $(this).scrollTop();
-       if(windowTop > 85){
+       if(windowTop < 85){
            $("#left").css({top:"85px"});
        }else {
            $("#left").css({top: windowTop + "px"});

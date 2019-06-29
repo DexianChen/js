@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background-color: #dddddd;
+}
+
+.w{
+    margin: 0 auto;
+    width: 980px;
+}
+
+.pg-header{
+    background-color: black;
+    color: white;
+    height: 48px;
+}
+.pg-body .menu{
+    position: absolute;
+    left: 200px;
+    width: 180px;
+    background-color: white;
+    float: left;
+}
+
+li {
+    list-style-type: none;
+}
+
+.pg-body .content{
+    position: absolute;
+    left: 385px;
+    right: 200px;
+    background-color: white;
+    float: left;
+}
+.pg-body .content .item{
+    height: 900px;
+}
