@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outer{
+    position:relative;
+    width:350px;
+    height:350px;
+    border:1px solid black;
+}
+.outer .small-box{
+    position: relative;
+    z-index: 1;
+}
+.outer .small-box .mark{
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 10;
+}
+.outer .small-box .float-box{
+    display: none;
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    background: #DAEEFC;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+.outer .big-box{
+    position: absolute;
+    top: 0;
+    left: 351px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    z-index: 1;
+    /*display: none;*/
+}
+.outer .big-box img{
+    position: absolute;
+    z-index: 5;
+}
