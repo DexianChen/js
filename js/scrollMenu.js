@@ -22,7 +22,7 @@ $(function () {
             }
         });
 
-        var headerHeight = $(".pg-header");
+        var headerHeight = $(".pg-header").height();
         if (windowTop > headerHeight){
             $("#menu").css({top: windowTop + "px"});
         }else {
