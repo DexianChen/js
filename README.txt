@@ -41,3 +41,6 @@
 
 11.magnifier
     图片放大镜功能
+
+12.barrage
+    弹幕效果
