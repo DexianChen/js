@@ -1,20 +1,26 @@
-//obj为一个对象，也可能为数组
 returnObjectInfo = function (obj) {
-    if ($.isPlainObject(obj)) {
-        return returnSingleObjectInfo(obj);
-    }else if ($.isArray(obj)) {
-        return returnArrayInfo(obj);
-    }else {
+    //obj为一个对象，也可能为数组,所以先进行判断
+    if (typeof obj === "object") {
+        if ($.isArray(obj)) {
+            return returnArrayInfo(array);
+        }else {
+            return returnSingleObjectInfo(obj);
+        }
+    } else {
         return null;
     }
 };
 
 returnSingleObjectInfo = function (obj) {
-    return "节点名称：" + returnInfoByVolidate(obj.nodeName);
+    return $(obj).prop("outerHTML");
 };
 
-returnArrayInfo = function(obj){
-    return returnSingleObjectInfo(obj[0]);
+returnArrayInfo = function(array){
+    var str = "";
+    $.each(array, function (index, value) {
+        str += returnSingleObjectInfo(value);
+    });
+    return str;
 };
 
 returnInfoByVolidate = function (str) {
