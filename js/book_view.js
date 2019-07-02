@@ -49,30 +49,17 @@ $(function () {
             var itemId = "";
             var itemContent = "";
             $.each(itemArray, function (index, value) {
-                if (chapter.chapterId != "1"){
-                    // if (value.indexOf("．") != -1){
-                    //     itemId = value.substring(0, value.indexOf(" "));
-                    //     alert(itemId)
-                    //     itemContent += value.substring(value.indexOf(" ")+1).trim();
-                    // }else {
-                    //     if (value.indexOf("。") != -1){
-                    //         alert(itemId)
-                    //         itemContent += value.trim();
-                    //         alert(itemContent)
-                    //         item = {"itemId":itemId, "content":itemContent};
-                    //         itemList.push(item);
-                    //         itemContent = "";
-                    //     }
-                    // }
-                }else {
-                    //TODO
-                    if (value.indexOf("．") != -1){
-                        itemId = value.substring(0, value.indexOf(" "));
-                        itemContent = value.substring(value.indexOf(" ")).trim();
+                if (value.indexOf("．") != -1){
+                    if (itemId != ""){
                         item = {"itemId":itemId, "content":itemContent};
-                        alert(item.itemId + "--->" + item.content)
                         itemList.push(item);
+                        itemContent = "";
                     }
+                    value = value.trim();
+                    itemId = value.substring(0, value.indexOf(" "));
+                    itemContent += value.substring(value.indexOf(" ")).trim();
+                }else if (value.indexOf("&nbsp;") != -1){
+                    itemContent += value;
                 }
             });
         }
@@ -86,7 +73,7 @@ $(function () {
     //     alert(value.nodeId + "--->" + value.content);
     // });
 
-    // $.each(itemList, function (index, value) {
-    //     alert(value.itemId + "--->" + value.content);
-    // });
+    $.each(itemList, function (index, value) {
+        alert(value.itemId + "--->" + value.content);
+    });
 });
