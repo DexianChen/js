@@ -18,7 +18,6 @@ $(function(){
 
     // 按回车键发送消息
     $("#text").keyup(function(e) {
-        alert(returnObjectInfo(this));
         if (e.keyCode==13) {
             $("#btn1").click();
         }
